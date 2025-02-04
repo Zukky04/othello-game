@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    gap: 2px;
+    margin: 20px auto;
+    width: 420px;
+    background-color: green;
+    padding: 5px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: darkgreen;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cell.black {
+    background-color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.cell.white {
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
